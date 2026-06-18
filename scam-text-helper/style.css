@@ -1,0 +1,143 @@
+:root {
+  --bg: #0f172a;
+  --card-bg: #1e293b;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --high: #f87171;
+  --medium: #fbbf24;
+  --low: #4ade80;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-top: 14px;
+}
+
+label:first-of-type {
+  margin-top: 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: var(--text);
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--accent);
+}
+
+button {
+  margin-top: 18px;
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #0f172a;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.risk-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.risk-high {
+  background: rgba(248, 113, 113, 0.15);
+  color: var(--high);
+}
+
+.risk-medium {
+  background: rgba(251, 191, 36, 0.15);
+  color: var(--medium);
+}
+
+.risk-low {
+  background: rgba(74, 222, 128, 0.15);
+  color: var(--low);
+}
+
+.results h3 {
+  margin-bottom: 8px;
+}
+
+.results ul {
+  padding-left: 20px;
+}
+
+.results li {
+  margin-bottom: 6px;
+}
+
+.dev-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-top: 1px solid #334155;
+  padding-top: 10px;
+  margin-top: 14px;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+}

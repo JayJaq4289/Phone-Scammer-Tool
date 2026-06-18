@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Scam Text Helper</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>📵 Scam Text Helper</h1>
+      <p class="subtitle">
+        Got a strange text from an unknown number asking for money or
+        personal info? Paste it below to get a quick risk check and
+        plain-language guidance.
+      </p>
+    </header>
+
+    <section class="card">
+      <label for="senderNumber">Sender's phone number (optional)</label>
+      <input
+        type="tel"
+        id="senderNumber"
+        placeholder="e.g. (555) 123-4567"
+      />
+
+      <label for="messageText">Message they sent you</label>
+      <textarea
+        id="messageText"
+        rows="6"
+        placeholder="Paste the text message here..."
+      ></textarea>
+
+      <button id="analyzeBtn">Check this message</button>
+    </section>
+
+    <section class="card results" id="results" hidden>
+      <h2>Results</h2>
+      <div id="riskLevel" class="risk-badge"></div>
+      <div id="flagsFound"></div>
+      <div id="guidance"></div>
+      <div id="lookupNote"></div>
+    </section>
+
+    <footer>
+      <p>
+        This tool gives general guidance only and is not a substitute for
+        advice from your phone carrier, bank, or law enforcement. If you
+        believe you're being threatened or extorted, contact local police.
+      </p>
+    </footer>
+  </main>
+
+  <script src="flags.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

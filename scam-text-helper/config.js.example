@@ -1,0 +1,17 @@
+// config.js.example
+//
+// Copy this file to "config.js" and fill in your own API credentials if you
+// want to add real spam/scam lookup data for phone numbers.
+//
+// Recommended services:
+//   - Twilio Lookup API (carrier, line type, and some spam-score data)
+//   - Numverify (carrier and line type)
+//   - Community spam-report APIs
+//
+// IMPORTANT: Never commit real API keys to a public repository.
+// Add "config.js" to your .gitignore.
+
+const CONFIG = {
+  SPAM_LOOKUP_API_URL: "", // e.g. "https://lookups.twilio.com/v2/PhoneNumbers/"
+  SPAM_LOOKUP_API_KEY: "", // your API key (keep this server-side in production!)
+};
